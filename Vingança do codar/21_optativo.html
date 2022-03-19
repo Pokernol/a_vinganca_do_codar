@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+
+    <script>
+
+        var prova_1 = parseInt(prompt('Olá usúario! vamos calcular sua media com base em duas provas propostas e ver se você foi aprovado, reprovado ou se irá ficar de recuperação (em "exame"), digite a nota da primeira prova:'));
+        var prova_2 = parseInt(prompt("digite a nota da segunda prova:"));
+        var media = (prova_1 + prova_2) / 2
+        
+        if (media >= 6) {
+            alert("Parabens, sua media foi de " + media + ". Você foi APROVADO");
+        } else if (media < 3) {
+            alert("Que pena, sua media foi de " + media + ". Você foi REPROVADO");
+        } else if (media >= 3 && media < 6 ) {
+            alert("Sua media foi de " + media + ". Você ficou de EXAME e terá que fazer a prova optativa, caso contrario será reprovado");
+        }
+
+
+    </script>
+
+</body>
+
+</html>

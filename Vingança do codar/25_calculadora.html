@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        /*
+        Uma micro calculadora
+        Escreva um programa para ler 2 valores inteiros informados pelo usuário e uma das seguintes operações a serem executadas (codificada da seguinte forma: 1.Adição, 2.Subtração, 3.Divisão, 4.Multiplicação).
+        O programa deve calcular e escrever o resultado dessa operação sobre os dois valores lidos. Observação: Considere
+        que só serão lidos os valores 1, 2, 3 ou 4 para as operações
+        */
+
+        // Perguntar numeros
+        var number_1 = parseInt(prompt("Olá usuario! vamos efetuar alguns calculos, escolha 2 numeros e o tipo de equação que você irá utilizar, Digite um numero para equação:"));
+        var number_2 = parseInt(prompt("Digite um numero para equação:"));
+        
+        // Tratamento de Operações
+        var escolha_operacao = parseInt(prompt("Escolha uma operação:\n(1.Adição)-(2.Subtração)-(3.Divisão)-(4.Multiplicação)"));
+        
+        // Soma
+        if (escolha_operacao == 1) {
+            var soma = number_1 + number_2;
+            alert("O resultado da soma é igual a: " + soma);
+
+        // Subtração
+        } else if (escolha_operacao == 2) {
+            var subtracao = number_1 - number_2;
+            alert("O resultado da soma é igual a: " + subtracao);
+
+        // Divisão
+        } else if (escolha_operacao == 3) {
+            var divisao = number_1 / number_2;
+            alert("O resultado da divisão é igual a: " + divisao);
+        
+        // Mutiplicação
+        } else if (escolha_operacao == 4) {
+            var multiplicacao = number_1 * number_2;
+            alert("o resultado da mutiplicação é igual a: " + multiplicacao);
+
+        } /* Mensagem de erro */ else if (escolha_operacao => 5) {
+            alert("ERRO, Informe um numero de '1' a '4' para efetuar uma das equações");
+        };
+        
+    </script>
+</body>
+</html>

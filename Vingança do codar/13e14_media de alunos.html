@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+
+    <script>
+
+        
+        var numero_1 = parseInt(prompt("Olá! vamos hoje calcular a media de 4 numeros e ver se você passa no teste? digite um numero de sua escolha:"));
+        var numero_2 = parseInt(prompt("digite um numero de sua escolha:"));
+        var numero_3 = parseInt(prompt("digite um numero de sua escolha:"));
+        var numero_4 = parseInt(prompt("digite um numero de sua escolha:"));
+        
+        
+        if (numero_1 <= 10 && numero_2 <= 10 && numero_3 <= 10 && numero_4 <= 10) {
+            var soma = (numero_1 + numero_2 + numero_3 + numero_4);
+        }else {
+            alert("erro, impossivel calcular media")
+        }
+
+        var media = soma / 4;
+
+        if(media >= 6 && media <= 10){
+            document.write("o valor de sua media foi de: " + media + " PARABÉNS! Você foi aprovado!");
+        } 
+        if (media < 6) {
+            document.write("o valor de sua soma foi de: " + media + " Infelizmente, você foi reprovado!");
+        }
+
+    </script>
+
+</body>
+
+</html>

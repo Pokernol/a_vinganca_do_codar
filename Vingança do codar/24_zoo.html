@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+
+    <script>
+        /* Um zoológico muito louco. 
+        Escreva um programa que leia a idade de 2 javalis e 2 girafas (considere que a idade dos javalis será sempre diferente, assim como das girafas )*/
+
+        var javali = [];
+        var girafa = [];
+        var javalis_maior = -1000;
+        var javalis_menor = 1000;
+        var girafa_maior = -1000;
+        var girafa_menor = 1000;
+        var idade = 0;
+       
+        for(var loop = 0; loop < 2; loop++) {
+            var idade_j = parseInt(prompt("Me informe a idade de um javali: "));
+            idade = idade_j;
+            javali.push(idade);
+        };
+        javali.forEach(numero => {
+            if(numero > javalis_maior ) {
+                javalis_maior = numero;
+            };
+            if (numero < javalis_menor){
+                javalis_menor = numero;
+            };
+        });
+
+        for(var loop = 0; loop < 2; loop++) {
+            var idade_g = parseInt(prompt("Me informe a idade de uma girafa: "));
+            idade = idade_g;
+            girafa.push(idade);
+        };
+
+        girafa.forEach(numero => {
+            if(numero > girafa_maior) {
+                girafa_maior = numero;
+            };
+            
+            if (numero < girafa_menor){
+                girafa_menor = numero;
+            };
+        });
+        
+        /*Calcule e escreva a soma das idades do javali mais velho com a girafa mais nova, e o produto das idades do javali mais novo com a girafa mais velha.*/
+        
+        alert("A idade dos javalis é: " + javali);
+        alert("A idade das girafas é: " + girafa);
+        alert("A soma da idade do javali mais velho e a idade da girafa mais nova é: " + (javalis_maior + girafa_menor));
+        alert("A soma da idade do javali mais novo e da girafa mais velha é: " + (girafa_maior + javalis_menor));
+        
+    </script>
+
+</body>
+
+</html>

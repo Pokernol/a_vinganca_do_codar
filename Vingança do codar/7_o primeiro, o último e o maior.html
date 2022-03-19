@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+
+    <script>
+
+        var numero_1 = parseInt(prompt("Olá! Hoje vamos com fazer comparações, será apresentado o primeiro o ultimo e o maior numero, digite um numero de sua escolha:"));
+        var numero_2 = parseInt(prompt("digite um numero de sua escolha:"));
+        var numero_3 = parseInt(prompt("digite um numero de sua escolha:"));
+        var numero_4 = parseInt(prompt("digite um numero de sua escolha:"));
+        
+        document.write ("O primeiro numero é " + numero_1 + (", O ultimo numero é ") + numero_4);
+
+    if (numero_1 > numero_2 && numero_1 > numero_3 && numero_1 > numero_4){
+        document.write (", e o maior é " + numero_1);
+    }
+
+    if (numero_2 > numero_1 && numero_2 > numero_3 && numero_2 > numero_4){
+        document.write (", e o maior é " + numero_2);
+    }
+
+    if (numero_3 > numero_2 && numero_3 > numero_1 && numero_3 > numero_4){
+        document.write (", e o maior é " + numero_3);
+    }
+
+    if (numero_4 > numero_2 && numero_4 > numero_3 && numero_4 > numero_1){
+        document.write (", e o maior é " + numero_4);
+    }
+
+    </script>
+
+</body>
+
+</html>

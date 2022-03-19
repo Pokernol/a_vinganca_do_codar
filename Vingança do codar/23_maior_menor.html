@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+
+    <script>
+        /* Faça um programa em que o usuário informe 20 valores e no final, escreva o maior e o menor valor lido.
+        */
+        var lista_numeros = [];
+        var maior = parseInt(-1000);
+        var menor = parseInt(1000);
+        var number = 0;
+        var anuncio = alert("Olá usúario! Hoje vamos pedir que informe 20 valores diferentes e no final será informado o maior e o menor valor lido.");
+
+        for(var loop = 0; loop < 20; loop++) {
+            var num = parseInt(prompt("Por favor digite um numero: "));
+            number = num;
+            lista_numeros.push(number);
+        };
+
+        alert("Numeros informados foram: " + lista_numeros);
+        lista_numeros.forEach(numero => {
+            if(numero > maior) {
+                maior = numero;
+            };
+            
+            if (numero < menor){
+                menor = numero;
+            };
+        });
+
+        alert("Este é o maior numereo informado: " + maior);                
+        alert("Este é o menor numereo informado: " + menor);
+
+
+
+
+    </script>
+
+</body>
+
+</html>

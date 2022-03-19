@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+
+    <script>
+        
+        // 领取包裹数量
+        var vezes = parseInt(prompt('Olá usúario! vamos calcular o valos de parcelas de uma promoção onde cada capacete artesanal para tartaruga custa R$18.230 e pode ser pago em até 15 vezes sem juros. Iforme em quantas vezes você irá pagar o capacete:'));
+        var valor = 18.230 / vezes;
+
+        // 写下每个宗地的地块数量和价值
+        if (vezes <= 15 ) {            
+            alert("O valor de parcelas vai ser de " + vezes + " vezes, e você irá pagar o valor aproximado de R$" + valor.toFixed(3) + " por mes.");
+        } else {
+        // 如果传递允许的宗地数量，则写入
+            alert("Erro, Você excedeu o numero de parcelas");
+        };
+
+    </script>
+
+</body>
+
+</html>

@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+
+    <script>
+
+        var km_inicio  = parseInt(prompt("Olá! hoje vamos ver um rendimento de um taxista com seu carro na praça? digite um numero em KM que ele iniciou o trabalho:"));
+        var km_final = parseInt(prompt("digite um numero em KM que ele ficou no final:"));
+        var conbustivel_gasto = parseInt(prompt("digite um numero em conbustivel gasto por ele no dia:"));
+
+        var media_consumo = (km_final - km_inicio) / conbustivel_gasto;
+
+        var gasolina_gasta = (km_final - km_inicio) * 2.90;
+
+        var ganho = parseInt(prompt("digite valor total recebido dos passageiros em reais:"));
+
+        var lucro = ganho - gasolina_gasta;
+
+        document.write("A média do consumo de combustível foi de " + media_consumo + "L, e o lucro liquido do dia foi de " + lucro + "R$");
+        
+    </script>
+
+</body>
+
+</html>

@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+
+    <script>
+        var poligono = parseInt(prompt('Olá usuario! vamos falar sobre polígonos, para começar informe quantos lados tem o polígono que deseja ser mostrado:'));
+
+        if (poligono == 3){
+        var lado_1 = parseInt(prompt('informe um dos lados de seu poligono em "cm":'));
+        var lado_2 = parseInt(prompt('informe mais um dos lados de seu poligono em "cm":'));
+        var lado_3 = parseInt(prompt('informe mais um dos lados de seu poligono em "cm":'));
+        var perimetro = lado_1 + lado_2 + lado_3;
+        alert ("O seu polígono tem 3 lados, portanto ele é um TRIÂNGULO e o valor do seu perímetro é de " + perimetro + "cm");
+        } else if (poligono == 4){
+        var lado_1 = parseInt(prompt('informe um dos lados de seu poligono em "cm":'));
+        var lado_2 = parseInt(prompt('informe mais um dos lados de seu poligono em "cm":'));
+        var lado_3 = parseInt(prompt('informe mais um dos lados de seu poligono em "cm":'));
+        var lado_4 = parseInt(prompt('informe mais um dos lados de seu poligono em "cm":'));
+        var perimetro = lado_1 + lado_2 + lado_3 + lado_4;
+        alert ("O seu polígono tem 4 lados, portanto ele é um QUADRADO e o valor do seu perímetro é de " + perimetro + "cm");
+        } else if (poligono == 5){
+        var lado_1 = parseInt(prompt('informe um dos lados de seu poligono em "cm":'));
+        var lado_2 = parseInt(prompt('informe mais um dos lados de seu poligono em "cm":'));
+        var lado_3 = parseInt(prompt('informe mais um dos lados de seu poligono em "cm":'));
+        var lado_4 = parseInt(prompt('informe mais um dos lados de seu poligono em "cm":'));
+        var lado_5 = parseInt(prompt('informe mais um dos lados de seu poligono em "cm":'));
+        var perimetro = lado_1 + lado_2 + lado_3 + lado_4 + lado_5;
+        alert ("O seu polígono tem 5 lados, portanto ele é um PENTÁGONO e o valor do seu perímetro é de " + perimetro + "cm");
+    } else if (poligono < 3){
+    alert ("ISSO NÃO É UM POLÍGONO, tente algo com mais lados")
+    }else if (poligono > 5){
+    alert ("POLÍGONO NÃO IDENTIFICADO, tente algo com menos lados")
+    }
+    </script>
+
+</body>
+
+</html>
